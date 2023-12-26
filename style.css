@@ -326,7 +326,7 @@
      text-align: justify;
  }
  
- skills.skills-details .experience {
+ skills .skills-details .experience {
      display: flex;
      align-items: center;
      margin: 0 10px;
@@ -343,4 +343,44 @@
      font-size: 18px;
      font-weight: 500;
      margin: 0 6px;
+ }
+ 
+ .skills-details .boxes {
+     width: 45%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .skills-details .box {
+     width: calc(100% / 2 - 20px);
+     margin: 20px 0;
+ }
+ 
+ .skills-details .boxes .topic {
+     font-size: 20px;
+     color: var(--primary-color);
+ }
+ 
+ .skills-details .boxes .per {
+     font-size: 60px;
+     color: var(--primary-color);
+ }
+ /*My Services css */
+ 
+ .services .boxes {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .services .boxes .box {
+     margin: 20px 0;
+     width: car(100% / 3 - 20px);
+     text-align: center;
+     border-radius: 12px;
+     padding: 30px 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+     cursor: default;
+     transition: all 0.4s ease;
  }
