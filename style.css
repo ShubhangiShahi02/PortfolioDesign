@@ -198,3 +198,149 @@
      background-color: var(--white-color);
      color: var(--primary-color);
  }
+ /* About section styling */
+ 
+ section {
+     padding-top: 40px;
+ }
+ 
+ section .content {
+     width: 80%;
+     margin: 40px auto;
+     font-family: 'Noto Serif', serif;
+ }
+ 
+ section .title {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 40px;
+ }
+ 
+ section .title span {
+     color: var(--black-color);
+     font-size: 30px;
+     font-weight: 600;
+     position: relative;
+     padding-bottom: 8px;
+ }
+ 
+ section .title span::before,
+ section .title span::after {
+     content: '';
+     position: absolute;
+     height: 3px;
+     width: 100%;
+     background: var(--primary-color);
+     left: 0;
+     bottom: 0;
+ }
+ 
+ section .title span::after {
+     bottom: -7px;
+     width: 70%;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ 
+ .about .about-details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .about .about-details .left {
+     width: 45%;
+ }
+ 
+ .about .left img {
+     height: 400px;
+     width: 400px;
+     object-fit: cover;
+     border-radius: 12px;
+ }
+ 
+ .about .about-details .right {
+     width: 55%;
+ }
+ 
+ section .topic {
+     color: var(--black-color);
+     font-size: 25px;
+     font-weight: 500;
+     margin-bottom: 10px;
+ }
+ 
+ .about-details .right p {
+     text-align: justify;
+     color: var(--black-color);
+ }
+ 
+ section button {
+     margin: 16px 0;
+ }
+ 
+ section .button {
+     margin: 16px 0;
+ }
+ 
+ section .button button {
+     outline: none;
+     padding: 8px 16px;
+     border-radius: 4px;
+     font-size: 25px;
+     font-weight: 400;
+     background: var(--primary-color);
+     color: var(--white-color);
+     border: 2px solid transparent;
+     cursor: pointer;
+     transition: all 0.4s ease;
+ }
+ 
+ section .button button:hover {
+     border-color: var(--primary-color);
+     background-color: var(--white-color);
+     color: var(--primary-color);
+ }
+ /* My Skills CSS */
+ 
+ .skills {
+     background: #f0f8ff;
+ }
+ 
+ .skills .content {
+     padding: 40px 0;
+ }
+ 
+ .skills .skills-details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .skills-details .text {
+     width: 50%;
+ }
+ 
+ .skills-details p {
+     color: var(--black-color);
+     text-align: justify;
+ }
+ 
+ skills.skills-details .experience {
+     display: flex;
+     align-items: center;
+     margin: 0 10px;
+ }
+ 
+ .skills-details .experience .num {
+     color: var(--black-color);
+     font-size: 80px;
+ }
+ 
+ .skills-details .experience .exp {
+     color: var(--black-color);
+     margin-left: 20px;
+     font-size: 18px;
+     font-weight: 500;
+     margin: 0 6px;
+ }
