@@ -1,17 +1,17 @@
 // sticky navigation menu JS
 
 let nav = document.querySelector("nav");
-let scroll8tn = document.querySelector(".scroll-button a");
+let scrollBtn = document.querySelector(".scroll-button a");
 
 let val;
 
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 20) {
         nav.classList.add("sticky");
-        scroll8tn.style.display = "block";
+        scrollBtn.style.display = "block";
     } else {
         nav.classList.add("sticky");
-        scroll8tn.style.display = "none";
+        scrollBtn.style.display = "none";
     }
 }
 
@@ -26,7 +26,7 @@ menuBtn.oneclick = function() {
     menuBtn.style.opacity = "0";
     menuBtn.style.pointerEvents = "none";
     body.style.overflow = "hidden";
-    scroll8tn.style.pointerEvents = "none";
+    scrollBtn.style.pointerEvents = "none";
 }
 
 menuBtn.oneclick = function() {
@@ -34,5 +34,16 @@ menuBtn.oneclick = function() {
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
     body.style.overflow = "auto";
-    scroll8tn.style.pointerEvents = "auto";
+    scrollBtn.style.pointerEvents = "auto";
+}
+
+//Side Navigation Bar Close While we click On Navigation Links
+
+let navLinks = document.querySelector(".menu li a");
+for (var i = 0; i < navLinks.length; i++) {
+    nav[i], addEventListener("click", function() {
+        navBar.classList.remove("active");
+        menuBtn.style.opacity = "i";
+        menuBtn.style.pointerEvents = "auto";
+    })
 }

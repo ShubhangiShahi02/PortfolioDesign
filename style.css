@@ -46,7 +46,7 @@
  }
  
  nav.sticky {
-     background-color: var(--primary-color);
+     background: var(--primary-color);
      padding: 13px 0;
  }
  
